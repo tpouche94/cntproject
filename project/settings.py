@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8%*=$^rpq60$ik7&p+t63m9(u)q^xs+)*l08hii1z$@3(ke=e1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tranquil-shelf-29611.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
