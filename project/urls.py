@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.admin import views
+from . import views
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('static_feed.urls'))
+    path('', include('static_feed.urls')),
+    url('livestream/',views.dynamic_stream,name="videostream"),  
+    url('stream/',views.indexscreen),
+    
 ]
